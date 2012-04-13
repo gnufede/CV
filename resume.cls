@@ -238,19 +238,18 @@
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
-  \vskip 2pt
-  \fullline
-  \vskip 2pt
   % where do you live?
   \@ifundefined{@addressone}{%
     % do nothing
   }{%
-    \leavevmode\hbox to \textwidth
-      {\hfill\vbox{\hbox{\@addressone}
-		   \hbox{\@addresstwo}
-		  }%
+    \leavevmode\hbox to \resumewidth
+      {\hfill \hbox{\namefont\@addressone}
+		  %
       }\par
   }
+  \vskip 2pt
+  \fullline
+  \vskip 2pt
 \endgroup}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -280,7 +279,7 @@
 \newskip\sectionskip
 \newdimen\resumewidth
 
-\resumewidth=6.5in
+\resumewidth=7.5in
 \sectionskip=3.5ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
@@ -509,6 +508,7 @@
   \advance\textwidth\hoffset % changing hoffset doesn't work. But this
   \hsize=\textwidth	     % doesn't really work as hboxes are rules
 			     % are unaffeted
+ \resumewidth=5.3in
   \let\par=\@@par
   \parindent=0pt
   \parskip=0pt
@@ -790,7 +790,7 @@
 \partopsep 10pt plus 2pt
 \parsep 2pt plus 2pt
 \itemsep \parsep}
-\pdfpagewidth 8.5in
+\pdfpagewidth 6.5in
 \pdfpageheight 11in 
 \pagestyle{empty}  % don't want page numbers
 
