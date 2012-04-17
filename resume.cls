@@ -775,7 +775,7 @@
 \topmargin 4pt
 \headheight 0pt
 \headsep 0pt
-\textheight 8in
+\textheight 10in
 \parindent 0pt
 %\topmargin 0in
 \oddsidemargin 0pt
@@ -818,8 +818,8 @@
 \textwidth=125mm
 \itemsep=0cm
 \parsep=0cm
-\topmargin 10mm
-\textheight 215mm
+\topmargin 7mm
+\textheight 255mm
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
@@ -829,6 +829,13 @@
       \setlength{\leftmargin}{0in}}}{\end{list}}
 
 \newenvironment{list2}{
+  \begin{list}{$$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.25in}}}{\end{list}}
+
+\newenvironment{list3}{
   \begin{list}{$\bullet$}{%
       \setlength{\itemsep}{0in}
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
